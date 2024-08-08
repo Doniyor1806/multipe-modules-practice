@@ -4,7 +4,8 @@ resource "aws_iam_user" "users" {
   path     = "/"
 }
 variable "users" {
-  type = list(string)
+  type    = list(string)
+  default = ["value"]
 }
 
 output "user_name" {
